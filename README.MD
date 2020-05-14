@@ -3,7 +3,7 @@ DOCKER-READY Telegram proxy
 Чтобы запустить этот прокси необходимо ввести следующую команду
 
 ```bash
-docker run -p 8012:80 8013:81 amorev/docker-proxy-rkn
+docker run -d -p 8012:80 -p 8013:81 -p 8014:82 -p 8015:83 -p 8016:84 lozovikov/telegram-rkn-proxy
 ```
 
 Вместо 8012 и 8013 (для метода [GetFile](https://core.telegram.org/bots/api#getfile) вы можете указать любой удобный вам порт.
